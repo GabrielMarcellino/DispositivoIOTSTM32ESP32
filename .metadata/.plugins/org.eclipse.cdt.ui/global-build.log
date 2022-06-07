@@ -1,0 +1,311 @@
+10:06:09 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:7: warning: variable 'yellowPhase' set but not used [-Wunused-but-set-variable]
+  139 |   int yellowPhase = 0;
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:132:7: warning: variable 'greenPhase' set but not used [-Wunused-but-set-variable]
+  132 |   int greenPhase = 0;
+      |       ^~~~~~~~~~
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'GenerateSquare':
+../Core/Src/main.c:518:8: warning: unused variable 'theta' [-Wunused-variable]
+  518 |  float theta;
+      |        ^~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40524	    152	   3672	  44348	   ad3c	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:09:28 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:7: warning: variable 'yellowPhase' set but not used [-Wunused-but-set-variable]
+  139 |   int yellowPhase = 0;
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:132:7: warning: variable 'greenPhase' set but not used [-Wunused-but-set-variable]
+  132 |   int greenPhase = 0;
+      |       ^~~~~~~~~~
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40524	    152	   3672	  44348	   ad3c	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:13:36 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44804	    156	   3676	  48636	   bdfc	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:17:31 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:7: warning: variable 'redPhase' set but not used [-Wunused-but-set-variable]
+  153 |   int redPhase = 0;
+      |       ^~~~~~~~
+../Core/Src/main.c:146:7: warning: variable 'bluePhase' set but not used [-Wunused-but-set-variable]
+  146 |   int bluePhase = 0;
+      |       ^~~~~~~~~
+../Core/Src/main.c:139:7: warning: variable 'yellowPhase' set but not used [-Wunused-but-set-variable]
+  139 |   int yellowPhase = 0;
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:132:7: warning: variable 'greenPhase' set but not used [-Wunused-but-set-variable]
+  132 |   int greenPhase = 0;
+      |       ^~~~~~~~~~
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44700	    156	   3676	  48532	   bd94	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:18:06 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:7: warning: variable 'redPhase' set but not used [-Wunused-but-set-variable]
+  153 |   int redPhase = 0;
+      |       ^~~~~~~~
+../Core/Src/main.c:146:7: warning: variable 'bluePhase' set but not used [-Wunused-but-set-variable]
+  146 |   int bluePhase = 0;
+      |       ^~~~~~~~~
+../Core/Src/main.c:139:7: warning: variable 'yellowPhase' set but not used [-Wunused-but-set-variable]
+  139 |   int yellowPhase = 0;
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:132:7: warning: variable 'greenPhase' set but not used [-Wunused-but-set-variable]
+  132 |   int greenPhase = 0;
+      |       ^~~~~~~~~~
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44700	    156	   3676	  48532	   bd94	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:18:54 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:7: warning: variable 'redPhase' set but not used [-Wunused-but-set-variable]
+  153 |   int redPhase = 0;
+      |       ^~~~~~~~
+../Core/Src/main.c:146:7: warning: variable 'bluePhase' set but not used [-Wunused-but-set-variable]
+  146 |   int bluePhase = 0;
+      |       ^~~~~~~~~
+../Core/Src/main.c:139:7: warning: variable 'yellowPhase' set but not used [-Wunused-but-set-variable]
+  139 |   int yellowPhase = 0;
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:132:7: warning: variable 'greenPhase' set but not used [-Wunused-but-set-variable]
+  132 |   int greenPhase = 0;
+      |       ^~~~~~~~~~
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44700	    156	   3676	  48532	   bd94	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:22:17 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44804	    156	   3676	  48636	   bdfc	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:23:14 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44804	    156	   3676	  48636	   bdfc	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+10:24:46 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44804	    156	   3676	  48636	   bdfc	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+10:25:24 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44804	    156	   3676	  48636	   bdfc	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:26:42 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44804	    156	   3676	  48636	   bdfc	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+10:27:43 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44804	    156	   3676	  48636	   bdfc	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+10:29:04 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44804	    156	   3676	  48636	   bdfc	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+10:32:55 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44812	    156	   3676	  48644	   be04	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:34:07 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44812	    156	   3676	  48644	   be04	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+10:34:47 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:8: warning: unused variable 'commandString' [-Wunused-variable]
+  114 |   char commandString[100] = "R S 2000";
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32Bulb.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32Bulb.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32Bulb.elf
+ 
+arm-none-eabi-objdump -h -S  STM32Bulb.elf  > "STM32Bulb.list"
+arm-none-eabi-objcopy  -O binary  STM32Bulb.elf  "STM32Bulb.bin"
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44820	    156	   3676	  48652	   be0c	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32Bulb.bin
+ 
+Finished building: STM32Bulb.list
+ 
+10:35:01 **** Incremental Build of configuration Debug for project STM32Bulb ****
+make -j8 all 
+arm-none-eabi-size   STM32Bulb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44820	    156	   3676	  48652	   be0c	STM32Bulb.elf
+Finished building: default.size.stdout
+ 
