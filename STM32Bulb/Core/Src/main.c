@@ -24,10 +24,22 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "math.h"
+#include "string.h"
+#include "stdio.h"
+#include "stdlib.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+
+typedef struct
+{
+  int samples;
+  int delay;
+  int maximum;
+  int shape[1000];
+  int phase;
+} LEDBehavior;
 
 /* USER CODE END PTD */
 
@@ -63,6 +75,9 @@ static void MX_TIM4_Init(void);
 void MX_USB_HOST_Process(void);
 
 /* USER CODE BEGIN PFP */
+void DeserializeConfiguration(char *configurationString, LEDBehavior *yellow, LEDBehavior *orange, LEDBehavior *red, LEDBehavior *blue);
+void GenerateHigh(int *fixed, int samples, int maximum, int delay);
+void GenerateLow(int *fixed, int samples, int maximum, int delay);
 void GenerateRamp(int *ramp, int samples, int maximum, int delay);
 void GenerateCossine(int *senoid, int samples, int maximum, int delay);
 void GenerateSquare(int *square, int samples, int maximum, int delay);
@@ -111,7 +126,6 @@ int main(void)
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 
-  char commandString[100] = "R S 2000";
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
@@ -122,49 +136,30 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
+  char configString[] = "Y-1000-0-R-0+O-1000-0-H-0+S-1000-0-R-0+B-1000-0-S-0";
+
+  LEDBehavior yellow, orange, red, blue;
+
+  DeserializeConfiguration(configString, &yellow, &orange, &red, &blue);
+
+  int yellowPhase;
+  int orangePhase;
+  int redPhase;
+  int bluePhase;
   int globalCounter = 0;
-
-  int yellowSamples = 1000;
-  int yellowDelay = 0;
-  int yellowMaximum = floor(65535/512);
-  int yellowShape[1000] = {0};
-  GenerateRamp(yellowShape, yellowSamples, yellowMaximum, yellowDelay);
-  int yellowPhase = 0;
-
-  int orangeSamples = 1000;
-  int orangeDelay = 250;
-  int orangeMaximum = floor(65535/512);
-  int orangeShape[1000] = {0};
-  GenerateCossine(orangeShape, orangeSamples, orangeMaximum, orangeDelay);
-  int orangePhase = 0;
-
-  int redSamples = 1000;
-  int redDelay = 0;
-  int redMaximum = floor(65535/512);
-  int redShape[1000] = {0};
-  GenerateParabola(redShape, redSamples, redMaximum, redDelay);
-  int redPhase = 0;
-
-  int blueSamples = 1000;
-  int blueDelay = 250;
-  int blueMaximum = floor(65535/512);
-  int blueShape[1000] = {0};
-  GenerateSquare(blueShape, blueSamples, blueMaximum, blueDelay);
-  int bluePhase = 0;
-
   while (1)
   {
 	globalCounter++;
 
-	yellowPhase = floor(globalCounter%yellowSamples);
-	orangePhase = floor(globalCounter%orangeSamples);
-	redPhase = floor(globalCounter%redSamples);
-	bluePhase = floor(globalCounter%blueSamples);
+	yellowPhase = floor(globalCounter%yellow.samples);
+	orangePhase = floor(globalCounter%orange.samples);
+	redPhase = floor(globalCounter%red.samples);
+	bluePhase = floor(globalCounter%blue.samples);
 
-	TIM4->CCR1 = yellowShape[yellowPhase];
-	TIM4->CCR2 = orangeShape[orangePhase];
-	TIM4->CCR3 = redShape[redPhase];
-	TIM4->CCR4 = blueShape[bluePhase];
+	TIM4->CCR1 = yellow.shape[yellowPhase];
+	TIM4->CCR2 = orange.shape[orangePhase];
+	TIM4->CCR3 = red.shape[redPhase];
+	TIM4->CCR4 = blue.shape[bluePhase];
 
 	HAL_Delay(2);
 
@@ -495,6 +490,125 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+void DeserializeConfiguration(char *configurationString, LEDBehavior *yellow, LEDBehavior *orange, LEDBehavior *red, LEDBehavior *blue){
+	char* ledConfiguration[4];
+	char* configurationParameters[5];
+
+	char* token = strtok(configurationString, "+");
+	ledConfiguration[0] = token;
+
+	for(int index = 1; token != NULL; index++){
+		token = strtok(NULL, "+");
+		ledConfiguration[index] = token;
+	}
+
+	for(int index = 0; index < 5; index++){
+		token = strtok(ledConfiguration[index], "-");
+		configurationParameters[0] = token;
+		for(int indexIn = 1; token != NULL; indexIn++){
+			token = strtok(NULL, "-");
+			configurationParameters[indexIn] = token;
+		}
+
+		if (*configurationParameters[0] == 'Y'){
+			yellow->samples = atoi(configurationParameters[1]);
+			yellow->delay = atoi(configurationParameters[2]);
+			yellow->maximum = (65535/512);
+			if (*configurationParameters[3] == 'C'){
+				GenerateCossine(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'H'){
+				GenerateHigh(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'L'){
+				GenerateLow(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'P'){
+				GenerateParabola(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'R'){
+				GenerateRamp(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'S'){
+				GenerateSquare(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			yellow->phase = atoi(configurationParameters[4]);
+		}
+		else if (*configurationParameters[0] == 'O'){
+			orange->samples = atoi(configurationParameters[1]);
+			orange->delay = atoi(configurationParameters[2]);
+			orange->maximum = (65535/512);
+			if (*configurationParameters[3] == 'C'){
+				GenerateCossine(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'H'){
+				GenerateHigh(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'L'){
+				GenerateLow(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'P'){
+				GenerateParabola(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'R'){
+				GenerateRamp(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'S'){
+				GenerateSquare(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			orange->phase = atoi(configurationParameters[4]);
+		}
+		else if (*configurationParameters[0] == 'R'){
+			red->samples = atoi(configurationParameters[1]);
+			red->delay = atoi(configurationParameters[2]);
+			red->maximum = (65535/512);
+			if (*configurationParameters[3] == 'C'){
+				GenerateCossine(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'H'){
+				GenerateHigh(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'L'){
+				GenerateLow(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'P'){
+				GenerateParabola(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'R'){
+				GenerateRamp(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'S'){
+				GenerateSquare(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			red->phase = atoi(configurationParameters[4]);
+		}
+		else if (*configurationParameters[0] == 'B'){
+			blue->samples = atoi(configurationParameters[1]);
+			blue->delay = atoi(configurationParameters[2]);
+			blue->maximum = (65535/512);
+			if (*configurationParameters[3] == 'C'){
+				GenerateCossine(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'H'){
+				GenerateHigh(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'L'){
+				GenerateLow(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'P'){
+				GenerateParabola(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'R'){
+				GenerateRamp(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'S'){
+				GenerateSquare(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			blue->phase = atoi(configurationParameters[4]);
+		}
+	}
+}
+
 void GenerateCossine(int *cosinusoid, int samples, int maximum, int delay){
 	float theta;
 	float phases = 6.28/samples;
@@ -503,6 +617,18 @@ void GenerateCossine(int *cosinusoid, int samples, int maximum, int delay){
 		cosinusoid[i] = floor(maximum*(cos(theta)+1));
 	}
 	Rotate(cosinusoid, samples, delay);
+}
+
+void GenerateHigh(int *fixed, int samples, int maximum, int delay){
+	for (int i = 0; i < samples; i++){
+		fixed[i] = floor(maximum);
+	}
+}
+
+void GenerateLow(int *fixed, int samples, int maximum, int delay){
+	for (int i = 0; i < samples; i++){
+		fixed[i] = 0;
+	}
 }
 
 void GenerateRamp(int *ramp, int samples, int maximum, int delay){
