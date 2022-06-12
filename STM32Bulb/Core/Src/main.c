@@ -221,6 +221,7 @@ int main(void)
 
 	// Setup the pace for the execution
 	HAL_Delay(5);
+	HAL_UART_Receive_IT(&huart2, configString, 55);
 
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();

@@ -10,8 +10,8 @@
 uint8_t *data = (uint8_t *) malloc(BUF_SIZE);
 
 // Wi-fi name and password
-const char* ssid = "Galaxy A719BC3";
-const char* password =  "ogoz7599";
+const char* ssid = "moto e20 6363";
+const char* password =  "12456789";
 
 // Declare web server instance on port 80
 AsyncWebServer server(80);
