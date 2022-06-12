@@ -114,7 +114,6 @@ void MX_USB_HOST_Process(void);
  * DeserializeConfiguration :-> gets a string and splits in blocks of
  * parameters. Then, for the specified LED, it sets the correct value for
  * each field in the wave form.
- * WaveSetup :-> Gets the received parameters and passes to the LED structures
  * GenerateHigh :-> generates a constant high level signal to the respective
  * wave parameters
  * GenerateLow :-> generates a constant low level signal to the respective
@@ -129,7 +128,7 @@ void MX_USB_HOST_Process(void);
  * parameters
  ******************************************************************************/
 void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow, LEDBehavior *orange, LEDBehavior *red, LEDBehavior *blue);
-void WaveSetup(LEDBehavior *led, char *samples, char *phase, int maximum, char *shape);
+void WaveSetup(LEDBehavior *led, uint8_t *samples, uint8_t *phase, int maximum, uint8_t *shape);
 void GenerateHigh(int *fixed, int samples, int maximum, int delay);
 void GenerateLow(int *fixed, int samples, int maximum, int delay);
 void GenerateRamp(int *ramp, int samples, int maximum, int delay);
@@ -594,31 +593,20 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	HAL_UART_Receive_IT(&huart2, configString, 55);
 }
 
-// Handles configuration string and passes the parameters for
-// the wave generator to the respective LEDs
+// Handles configuration string and passes the parameters for wave generator for the respective LEDs
 void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow, LEDBehavior *orange, LEDBehavior *red, LEDBehavior *blue){
-	// This value was found empirically, if the value is greater than this
-	// there are no visible differences in behavior
-	int maximumAmplitude = 65535/512;
-
-	// Variables to hold the parameters while the string is being parsed
 	char* ledConfiguration[4];
 	char* configurationParameters[4];
 
-	// Tokens for the string split
 	char* token = strtok((char *)configurationString, "@");
 	ledConfiguration[0] = token;
 
-	// Splitting the string
 	for(int index = 1; token != NULL; index++){
 		token = strtok(NULL, "@");
 		ledConfiguration[index] = token;
 	}
 
-	// Splitting the string and passing the parameters to the function
-	// that setups the values in the LED structure.
 	for(int index = 0; index < 4; index++){
-		// Splitting the string
 		token = strtok(ledConfiguration[index], "-");
 		configurationParameters[0] = token;
 		for(int indexIn = 1; token != NULL; indexIn++){
@@ -626,60 +614,126 @@ void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow,
 			configurationParameters[indexIn] = token;
 		}
 
-		// Yellow LED
 		if (*configurationParameters[0] == 'Y'){
-			WaveSetup(&yellow, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
+			WaveSetup(yellow, configurationParameters[1], configurationParameters[2], (65535/512), configurationParameters[3]);
+			/*yellow->samples = atoi(configurationParameters[1]);
+			yellow->phase = atoi(configurationParameters[2]);
+			yellow->maximum = (65535/512);
+			if (*configurationParameters[3] == 'C'){
+				GenerateCossine(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'H'){
+				GenerateHigh(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'L'){
+				GenerateLow(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'P'){
+				GenerateParabola(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'R'){
+				GenerateRamp(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'S'){
+				GenerateSquare(yellow->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}*/
 		}
-		// Orange LED
 		else if (*configurationParameters[0] == 'O'){
-			WaveSetup(&orange, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
+			orange->samples = atoi(configurationParameters[1]);
+			orange->phase = atoi(configurationParameters[2]);
+			orange->maximum = (65535/512);
+			if (*configurationParameters[3] == 'C'){
+				GenerateCossine(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'H'){
+				GenerateHigh(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'L'){
+				GenerateLow(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'P'){
+				GenerateParabola(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'R'){
+				GenerateRamp(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'S'){
+				GenerateSquare(orange->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
 		}
-		// Red LED
 		else if (*configurationParameters[0] == 'R'){
-			WaveSetup(&red, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
+			red->samples = atoi(configurationParameters[1]);
+			red->phase = atoi(configurationParameters[2]);
+			red->maximum = (65535/512);
+			if (*configurationParameters[3] == 'C'){
+				GenerateCossine(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'H'){
+				GenerateHigh(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'L'){
+				GenerateLow(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'P'){
+				GenerateParabola(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'R'){
+				GenerateRamp(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'S'){
+				GenerateSquare(red->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
 		}
-		// Blue LED
 		else if (*configurationParameters[0] == 'B'){
-			WaveSetup(&blue, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
+			blue->samples = atoi(configurationParameters[1]);
+			blue->phase = atoi(configurationParameters[2]);
+			blue->maximum = (65535/512);
+			if (*configurationParameters[3] == 'C'){
+				GenerateCossine(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'H'){
+				GenerateHigh(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'L'){
+				GenerateLow(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'P'){
+				GenerateParabola(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'R'){
+				GenerateRamp(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
+			else if (*configurationParameters[3] == 'S'){
+				GenerateSquare(blue->shape, atoi(configurationParameters[1]), (65535/512), atoi(configurationParameters[2]));
+			}
 		}
 	}
 }
 
-// Converts the received parameters and store them in the received structure
 void WaveSetup(LEDBehavior *led, char *samples, char *phase, int maximum, char *shape){
-	// Number of samples
 	led->samples = atoi(samples);
-	// Samples Delay
 	led->phase = atoi(phase);
-	// Maximum value
 	led->maximum = maximum;
-	// Cosine wave
 	if (*shape == 'C'){
 		GenerateCossine(led->shape, led->samples, maximum, led->phase);
 	}
-	// High wave
 	else if (*shape == 'H'){
 		GenerateHigh(led->shape, led->samples, maximum, led->phase);
 	}
-	// Low wave
 	else if (*shape == 'L'){
 		GenerateLow(led->shape, led->samples, maximum, led->phase);
 	}
-	// Parabola wave
 	else if (*shape == 'P'){
 		GenerateParabola(led->shape, led->samples, maximum, led->phase);
 	}
-	// Ramp wave
 	else if (*shape == 'R'){
 		GenerateRamp(led->shape, led->samples, maximum, led->phase);
 	}
-	// Square wave
 	else if (*shape == 'S'){
 		GenerateSquare(led->shape, led->samples, maximum, led->phase);
 	}
 }
 
-// Generates cosine wave according to the received parameters
 void GenerateCossine(int *cosinusoid, int samples, int maximum, int delay){
 	float theta;
 	float phases = 6.28/samples;
@@ -689,21 +743,18 @@ void GenerateCossine(int *cosinusoid, int samples, int maximum, int delay){
 	}
 }
 
-// Generates constant high according to the received parameters
 void GenerateHigh(int *fixed, int samples, int maximum, int delay){
 	for (int i = 0; i < samples; i++){
 		fixed[i] = floor(maximum);
 	}
 }
 
-// Generates constant low according to the received parameters
 void GenerateLow(int *fixed, int samples, int maximum, int delay){
 	for (int i = 0; i < samples; i++){
 		fixed[i] = 0;
 	}
 }
 
-// Generates ramp wave according to the received parameters
 void GenerateRamp(int *ramp, int samples, int maximum, int delay){
 	float theta = maximum/(float)samples;
 	for (int i = 0; i < samples; i++){
@@ -711,7 +762,6 @@ void GenerateRamp(int *ramp, int samples, int maximum, int delay){
 	}
 }
 
-// Generates square wave according to the received parameters
 void GenerateSquare(int *square, int samples, int maximum, int delay){
 	for (int i = 0; i < floor(samples/2); i++){
 		square[i] = maximum;
@@ -721,7 +771,6 @@ void GenerateSquare(int *square, int samples, int maximum, int delay){
 	}
 }
 
-// Generates parabola wave according to the received parameters
 void GenerateParabola(int *parabola, int samples, int maximum, int delay){
 	float a = (4*maximum)/(pow(samples,2));
 	float b = -(4*maximum)/(float)samples;

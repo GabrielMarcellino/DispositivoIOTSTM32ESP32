@@ -628,20 +628,19 @@ void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow,
 
 		// Yellow LED
 		if (*configurationParameters[0] == 'Y'){
-			WaveSetup(&yellow, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
+			WaveSetup(yellow, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
 		}
 		// Orange LED
 		else if (*configurationParameters[0] == 'O'){
-			WaveSetup(&orange, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
+			WaveSetup(orange, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
 		}
 		// Red LED
 		else if (*configurationParameters[0] == 'R'){
-			WaveSetup(&red, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
+			WaveSetup(red, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
 		}
 		// Blue LED
 		else if (*configurationParameters[0] == 'B'){
-			WaveSetup(&blue, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
-		}
+			WaveSetup(blue, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
 	}
 }
 
