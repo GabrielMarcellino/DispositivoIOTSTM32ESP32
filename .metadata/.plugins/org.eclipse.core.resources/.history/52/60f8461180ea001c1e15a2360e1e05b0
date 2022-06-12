@@ -624,7 +624,7 @@ void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow,
 			token = strtok(NULL, "-");
 			configurationParameters[indexIn] = token;
 		}
-		maximumAmplitude = 65535/512;
+
 		// Yellow LED
 		if (*configurationParameters[0] == 'Y'){
 			WaveSetup(&yellow, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);

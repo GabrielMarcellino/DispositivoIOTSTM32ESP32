@@ -130,12 +130,13 @@ void MX_USB_HOST_Process(void);
  ******************************************************************************/
 void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow, LEDBehavior *orange, LEDBehavior *red, LEDBehavior *blue);
 void WaveSetup(LEDBehavior *led, char *samples, char *phase, int maximum, char *shape);
-void GenerateHigh(int *fixed, int samples, int maximum);
-void GenerateLow(int *fixed, int samples, int maximum);
-void GenerateRamp(int *ramp, int samples, int maximum);
-void GenerateCossine(int *senoid, int samples, int maximum);
-void GenerateSquare(int *square, int samples, int maximum);
-void GenerateParabola(int *square, int samples, int maximum);
+void GenerateHigh(int *fixed, int samples, int maximum, int delay);
+void GenerateLow(int *fixed, int samples, int maximum, int delay);
+void GenerateRamp(int *ramp, int samples, int maximum, int delay);
+void GenerateCossine(int *senoid, int samples, int maximum, int delay);
+void GenerateSquare(int *square, int samples, int maximum, int delay);
+void GenerateParabola(int *square, int samples, int maximum, int delay);
+void Rotate(int *shape, int samples, int delay);
 
 /* USER CODE END PFP */
 
@@ -624,7 +625,7 @@ void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow,
 			token = strtok(NULL, "-");
 			configurationParameters[indexIn] = token;
 		}
-		maximumAmplitude = 65535/512;
+
 		// Yellow LED
 		if (*configurationParameters[0] == 'Y'){
 			WaveSetup(&yellow, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);

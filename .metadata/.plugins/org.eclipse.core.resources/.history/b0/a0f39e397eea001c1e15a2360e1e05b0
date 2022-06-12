@@ -130,12 +130,13 @@ void MX_USB_HOST_Process(void);
  ******************************************************************************/
 void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow, LEDBehavior *orange, LEDBehavior *red, LEDBehavior *blue);
 void WaveSetup(LEDBehavior *led, char *samples, char *phase, int maximum, char *shape);
-void GenerateHigh(int *fixed, int samples, int maximum);
-void GenerateLow(int *fixed, int samples, int maximum);
-void GenerateRamp(int *ramp, int samples, int maximum);
-void GenerateCossine(int *senoid, int samples, int maximum);
-void GenerateSquare(int *square, int samples, int maximum);
-void GenerateParabola(int *square, int samples, int maximum);
+void GenerateHigh(int *fixed, int samples, int maximum, int delay);
+void GenerateLow(int *fixed, int samples, int maximum, int delay);
+void GenerateRamp(int *ramp, int samples, int maximum, int delay);
+void GenerateCossine(int *senoid, int samples, int maximum, int delay);
+void GenerateSquare(int *square, int samples, int maximum, int delay);
+void GenerateParabola(int *square, int samples, int maximum, int delay);
+void Rotate(int *shape, int samples, int delay);
 
 /* USER CODE END PFP */
 
@@ -624,7 +625,7 @@ void DeserializeConfiguration(uint8_t *configurationString, LEDBehavior *yellow,
 			token = strtok(NULL, "-");
 			configurationParameters[indexIn] = token;
 		}
-		maximumAmplitude = 65535/512;
+
 		// Yellow LED
 		if (*configurationParameters[0] == 'Y'){
 			WaveSetup(&yellow, configurationParameters[1], configurationParameters[2], maximumAmplitude, configurationParameters[3]);
@@ -654,32 +655,32 @@ void WaveSetup(LEDBehavior *led, char *samples, char *phase, int maximum, char *
 	led->maximum = maximum;
 	// Cosine wave
 	if (*shape == 'C'){
-		GenerateCossine(led->shape, led->samples, maximum);
+		GenerateCossine(led->shape, led->samples, maximum, led->phase);
 	}
 	// High wave
 	else if (*shape == 'H'){
-		GenerateHigh(led->shape, led->samples, maximum);
+		GenerateHigh(led->shape, led->samples, maximum, led->phase);
 	}
 	// Low wave
 	else if (*shape == 'L'){
-		GenerateLow(led->shape, led->samples, maximum);
+		GenerateLow(led->shape, led->samples, maximum, led->phase);
 	}
 	// Parabola wave
 	else if (*shape == 'P'){
-		GenerateParabola(led->shape, led->samples, maximum);
+		GenerateParabola(led->shape, led->samples, maximum, led->phase);
 	}
 	// Ramp wave
 	else if (*shape == 'R'){
-		GenerateRamp(led->shape, led->samples, maximum);
+		GenerateRamp(led->shape, led->samples, maximum, led->phase);
 	}
 	// Square wave
 	else if (*shape == 'S'){
-		GenerateSquare(led->shape, led->samples, maximum);
+		GenerateSquare(led->shape, led->samples, maximum, led->phase);
 	}
 }
 
 // Generates cosine wave according to the received parameters
-void GenerateCossine(int *cosinusoid, int samples, int maximum){
+void GenerateCossine(int *cosinusoid, int samples, int maximum, int delay){
 	float theta;
 	float phases = 6.28/samples;
 	for (int i = 0; i < samples; i++){
@@ -689,21 +690,21 @@ void GenerateCossine(int *cosinusoid, int samples, int maximum){
 }
 
 // Generates constant high according to the received parameters
-void GenerateHigh(int *fixed, int samples, int maximum){
+void GenerateHigh(int *fixed, int samples, int maximum, int delay){
 	for (int i = 0; i < samples; i++){
 		fixed[i] = floor(maximum);
 	}
 }
 
 // Generates constant low according to the received parameters
-void GenerateLow(int *fixed, int samples, int maximum){
+void GenerateLow(int *fixed, int samples, int maximum, int delay){
 	for (int i = 0; i < samples; i++){
 		fixed[i] = 0;
 	}
 }
 
 // Generates ramp wave according to the received parameters
-void GenerateRamp(int *ramp, int samples, int maximum){
+void GenerateRamp(int *ramp, int samples, int maximum, int delay){
 	float theta = maximum/(float)samples;
 	for (int i = 0; i < samples; i++){
 		ramp[i] = floor(i*theta);
@@ -711,7 +712,7 @@ void GenerateRamp(int *ramp, int samples, int maximum){
 }
 
 // Generates square wave according to the received parameters
-void GenerateSquare(int *square, int samples, int maximum){
+void GenerateSquare(int *square, int samples, int maximum, int delay){
 	for (int i = 0; i < floor(samples/2); i++){
 		square[i] = maximum;
 	}
@@ -721,7 +722,7 @@ void GenerateSquare(int *square, int samples, int maximum){
 }
 
 // Generates parabola wave according to the received parameters
-void GenerateParabola(int *parabola, int samples, int maximum){
+void GenerateParabola(int *parabola, int samples, int maximum, int delay){
 	float a = (4*maximum)/(pow(samples,2));
 	float b = -(4*maximum)/(float)samples;
 	float c = maximum;
