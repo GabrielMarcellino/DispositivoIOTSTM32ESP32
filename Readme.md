@@ -9,4 +9,4 @@ Aplicações de conectividade e automação têm tomado cada vez mais espaço no
 Baseado nesse conceito, a proposta desse trabalho é fazer a conexão de um smartphone com uma STM32 através de uma rede local e acionar alguns periféricos da placa.
 
 ## Conceito
-Utilizando um módulo MKR1000 para estabelecer uma conexão wi-fi, vamos interfaceá-lo com um módulo STM32F407 para controlar alguns dos seus periféricos.
+Utilizando um módulo ESP32 para estabelecer uma conexão wi-fi, vamos interfaceá-lo com um módulo STM32F407 via UART para gerar uma função de onda e controlar seus periféricos via PWM.
