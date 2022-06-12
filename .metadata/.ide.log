@@ -6356,3 +6356,611 @@
 2022-06-11 18:51:17,853 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 4038mS.
 2022-06-11 18:51:17,853 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
 2022-06-11 18:51:17,853 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2022-06-11 23:52:44,523 [WARN] BspModel:441 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2022-06-11 23:52:44,554 [WARN] BspModel:441 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2022-06-11 23:52:44,709 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2022-06-11 23:52:44,709 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2022-06-11 23:52:44,709 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2022-06-11 23:52:44,709 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2022-06-11 23:52:52,595 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 949006784 Bytes (1073741824)
+2022-06-11 23:52:54,626 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 943951600 Bytes (1073741824)
+2022-06-11 23:52:57,398 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 941753528 Bytes (1073741824)
+2022-06-11 23:52:57,903 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SPI
+2022-06-11 23:52:57,903 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2022-06-11 23:52:57,903 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2S
+2022-06-11 23:52:57,903 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2022-06-11 23:52:57,903 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2022-06-11 23:52:57,905 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2022-06-11 23:52:57,905 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_OTG_FS
+2022-06-11 23:52:57,905 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2022-06-11 23:52:57,905 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_HOST
+2022-06-11 23:52:57,905 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2022-06-11 23:52:57,925 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2022-06-11 23:52:57,925 [INFO] CodeGenerator:641 - code generatio: config db path: C:\ST\STM32CubeIDE_1.4.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\
+2022-06-11 23:52:57,943 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2022-06-11 23:52:57,943 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2022-06-11 23:52:58,806 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\license.tmp_save
+2022-06-11 23:52:59,462 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\license.tmp
+2022-06-11 23:52:59,520 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\gpio.tmp_save
+2022-06-11 23:52:59,603 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\gpio.tmp
+2022-06-11 23:52:59,603 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2022-06-11 23:52:59,724 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\usb_otg_fs_vars.tmp_save
+2022-06-11 23:52:59,793 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\usb_otg_fs_vars.tmp
+2022-06-11 23:52:59,809 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\usb_otg_fs_inc.tmp_save
+2022-06-11 23:52:59,862 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\usb_otg_fs_inc.tmp
+2022-06-11 23:52:59,878 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\usb_otg_fs_HalInit.tmp_save
+2022-06-11 23:52:59,965 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\usb_otg_fs_HalInit.tmp
+2022-06-11 23:52:59,973 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\usb_otg_fs_Msp.tmp_save
+2022-06-11 23:53:00,096 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\usb_otg_fs_Msp.tmp
+2022-06-11 23:53:00,936 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2022-06-11 23:53:00,936 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2022-06-11 23:53:00,936 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2022-06-11 23:53:00,936 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2022-06-11 23:53:00,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2022-06-11 23:53:00,958 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2022-06-11 23:53:00,974 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\App\usb_host.c_save
+2022-06-11 23:53:01,074 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\App\usb_host.c
+2022-06-11 23:53:01,090 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\App\usb_host.h_save
+2022-06-11 23:53:01,174 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\App\usb_host.h
+2022-06-11 23:53:01,190 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\Target\usbh_conf.h_save
+2022-06-11 23:53:01,290 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\Target\usbh_conf.h
+2022-06-11 23:53:01,306 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\Target\usbh_conf.c_save
+2022-06-11 23:53:01,390 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\Target\usbh_conf.c
+2022-06-11 23:53:01,390 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\Target\usbh_platform.c_save
+2022-06-11 23:53:01,475 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\Target\usbh_platform.c
+2022-06-11 23:53:01,491 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\Target\usbh_platform.h_save
+2022-06-11 23:53:01,560 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\USB_HOST\Target\usbh_platform.h
+2022-06-11 23:53:01,591 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Src\stm32f4xx_it.c_save
+2022-06-11 23:53:01,676 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Src\stm32f4xx_it.c
+2022-06-11 23:53:01,691 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Inc\stm32f4xx_it.h_save
+2022-06-11 23:53:01,738 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Inc\stm32f4xx_it.h
+2022-06-11 23:53:01,776 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-11 23:53:01,923 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Src\stm32f4xx_hal_msp.c
+2022-06-11 23:53:01,923 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\system.tmp_save
+2022-06-11 23:53:01,976 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\MXTmpFiles\system.tmp
+2022-06-11 23:53:02,008 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-11 23:53:02,155 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-11 23:53:02,246 [WARN] IPConfigManager:2976 - IP not found : TIM
+2022-06-11 23:53:02,246 [WARN] CodeGenerator:3191 - IP not found : null
+2022-06-11 23:53:02,285 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Inc\main.h_save
+2022-06-11 23:53:02,376 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Inc\main.h
+2022-06-11 23:53:02,399 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Src\main.c_save
+2022-06-11 23:53:02,660 [INFO] CodeEngine:247 - Generated code: C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32Bulb\Core\Src\main.c
+2022-06-11 23:53:03,852 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 269mS.
+2022-06-11 23:53:03,867 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2022-06-11 23:53:04,870 [INFO] ConfigFileManager:1242 - The Die is : DIE413
+2022-06-11 23:53:07,887 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 4020mS.
+2022-06-11 23:53:07,894 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2022-06-11 23:53:07,894 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2022-06-12 16:36:17,599 [INFO] PinoutConfigView:863 - CSV file before='STM32-Pinout'
+2022-06-12 16:36:17,615 [INFO] PinoutConfigView:875 - CSV file after='C:\Users\gabri\OneDrive\Documentos\GitHub\DispositivoIOTSTM32ESP32\STM32-Pinout.csv'
+2022-06-12 16:36:17,615 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 1 - PE2
+2022-06-12 16:36:17,615 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_TXD3
+2022-06-12 16:36:17,615 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A23
+2022-06-12 16:36:17,615 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_TRACECLK
+2022-06-12 16:36:17,615 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 2 - PE3
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A19
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_TRACED0
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 3 - PE4
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D4
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A20
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_TRACED1
+2022-06-12 16:36:17,631 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 4 - PE5
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D6
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A21
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_TRACED2
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM9_CH1
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 5 - PE6
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D7
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A22
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_TRACED3
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM9_CH2
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,646 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 6 - VBAT
+2022-06-12 16:36:17,662 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,663 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 7 - PC13-ANTI_TAMP
+2022-06-12 16:36:17,663 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = RTC_AF1
+2022-06-12 16:36:17,664 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,665 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 8 - PC14-OSC32_IN
+2022-06-12 16:36:17,666 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = RCC_OSC32_IN
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 9 - PC15-OSC32_OUT
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = RCC_OSC32_OUT
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 10 - VSS
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 11 - VDD
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 12 - PH0-OSC_IN
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = RCC_OSC_IN
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 13 - PH1-OSC_OUT
+2022-06-12 16:36:17,670 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = RCC_OSC_OUT
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 14 - NRST
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 15 - PC0
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_STP
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 16 - PC1
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_MDC
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 17 - PC2
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_TXD2
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S2_ext_SD
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI2_MISO
+2022-06-12 16:36:17,685 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_DIR
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 18 - PC3
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_TX_CLK
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_SD
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_SD/SPI2_MOSI
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_NXT
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 19 - VDD
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 20 - VSSA
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 21 - VREF+
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 22 - VDDA
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 23 - PA0-WKUP
+2022-06-12 16:36:17,698 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_CRS
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_WKUP
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH1
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH1/TIM2_ETR
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM5_CH1
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_ETR
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = UART4_TX
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_CTS
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 24 - PA1
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_REF_CLK
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_REF_CLK/ETH_RX_CLK
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH2
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM5_CH2
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = UART4_RX
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_RTS
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 25 - PA2
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_MDIO
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH3
+2022-06-12 16:36:17,713 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM5_CH3
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM9_CH1
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_TX
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 26 - PA3
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_COL
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH4
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM5_CH4
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM9_CH2
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_RX
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_D0
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 27 - VSS
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 28 - VDD
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 29 - PA4
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_HSYNC
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_WS
+2022-06-12 16:36:17,729 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI1_NSS
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_WS/SPI3_NSS
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_CK
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = USB_OTG_HS_SOF
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 30 - PA5
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI1_SCK
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH1
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH1/TIM2_ETR
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH1N
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_CK
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 31 - PA6
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_PIXCLK
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI1_MISO
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = TIM13_CH1
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_BKIN
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH1
+2022-06-12 16:36:17,744 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_BKIN
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 32 - PA7
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_CRS_DV
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_CRS_DV/ETH_RX_DV
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI1_MOSI
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = TIM14_CH1
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH1N
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH2
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH1N
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 33 - PC4
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_RXD0
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 34 - PC5
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_RXD1
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 35 - PB0
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_RXD2
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH2N
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH3
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH2N
+2022-06-12 16:36:17,760 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_D1
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 36 - PB1
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_RXD3
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH3N
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH4
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH3N
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_D2
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 37 - PB2
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 38 - PE7
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D4
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D4/FSMC_DA4
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_ETR
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 39 - PE8
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D5
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D5/FSMC_DA5
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH1N
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,776 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 40 - PE9
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D6
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D6/FSMC_DA6
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH1
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 41 - PE10
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D7
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D7/FSMC_DA7
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH2N
+2022-06-12 16:36:17,791 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,798 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 42 - PE11
+2022-06-12 16:36:17,798 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D8
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D8/FSMC_DA8
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH2
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 43 - PE12
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D9
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D9/FSMC_DA9
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH3N
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 44 - PE13
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D10
+2022-06-12 16:36:17,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D10/FSMC_DA10
+2022-06-12 16:36:17,808 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH3
+2022-06-12 16:36:17,808 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,808 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 45 - PE14
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D11
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D11/FSMC_DA11
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH4
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 46 - PE15
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D12
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D12/FSMC_DA12
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_BKIN
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 47 - PB10
+2022-06-12 16:36:17,810 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_RX_ER
+2022-06-12 16:36:17,819 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C2_SCL
+2022-06-12 16:36:17,819 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_CK
+2022-06-12 16:36:17,819 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_CK/SPI2_SCK
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH3
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_TX
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_D3
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 48 - PB11
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_TX_EN
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C2_SDA
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH4
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_RX
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_D4
+2022-06-12 16:36:17,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,829 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 49 - VCAP_1
+2022-06-12 16:36:17,829 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 50 - VDD
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 51 - PB12
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN2_RX
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_TXD0
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C2_SMBA
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_WS
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_WS/SPI2_NSS
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_BKIN
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_CK
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = USB_OTG_HS_ID
+2022-06-12 16:36:17,831 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_D5
+2022-06-12 16:36:17,839 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,839 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 52 - PB13
+2022-06-12 16:36:17,839 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN2_TX
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_TXD1
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_CK
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_CK/SPI2_SCK
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH1N
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_CTS
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_D6
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 53 - PB14
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S2_ext_SD
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI2_MISO
+2022-06-12 16:36:17,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = TIM12_CH1
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH2N
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH2N
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_RTS
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = USB_OTG_HS_DM
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 54 - PB15
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_SD
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = RTC_REFIN
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_SD/SPI2_MOSI
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = TIM12_CH2
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH3N
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH3N
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = USB_OTG_HS_DP
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 55 - PD8
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D13
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D13/FSMC_DA13
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_TX
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 56 - PD9
+2022-06-12 16:36:17,859 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D14
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D14/FSMC_DA14
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_RX
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 57 - PD10
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D15
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D15/FSMC_DA15
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_CK
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 58 - PD11
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A16
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A16/FSMC_CLE
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_CTS
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 59 - PD12
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A17
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A17/FSMC_ALE
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_CH1
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_RTS
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 60 - PD13
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_A18
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_CH2
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 61 - PD14
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D0
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D0/FSMC_DA0
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_CH3
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 62 - PD15
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D1
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D1/FSMC_DA1
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_CH4
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 63 - PC6
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D0
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_MCK
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_D6
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH1
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH1
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = USART6_TX
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,891 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 64 - PC7
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D1
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_MCK
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_D7
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH2
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH2
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = USART6_RX
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 65 - PC8
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D2
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_D0
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH3
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH3
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = USART6_CK
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 66 - PC9
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D3
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C3_SDA
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S_CKIN
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = RCC_MCO_2
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_D1
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH4
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM8_CH4
+2022-06-12 16:36:17,906 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 67 - PA8
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C3_SCL
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = RCC_MCO_1
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH1
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART1_CK
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_FS_SOF
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 68 - PA9
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D0
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C3_SMBA
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH2
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART1_TX
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 69 - PA10
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D1
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH3
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART1_RX
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_FS_ID
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 70 - PA11
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN1_RX
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_CH4
+2022-06-12 16:36:17,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART1_CTS
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_FS_DM
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 71 - PA12
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN1_TX
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM1_ETR
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART1_RTS
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_FS_DP
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 72 - PA13
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_JTMS-SWDIO
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 73 - VCAP_2
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 74 - VSS
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 75 - VDD
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 76 - PA14
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_JTCK-SWCLK
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 77 - PA15
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_WS
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI1_NSS
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_WS/SPI3_NSS
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_JTDI
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH1
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH1/TIM2_ETR
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 78 - PC10
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D8
+2022-06-12 16:36:17,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_CK
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_D2
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_CK/SPI3_SCK
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = UART4_TX
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_TX
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 79 - PC11
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D4
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S3_ext_SD
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_D3
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = SPI3_MISO
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = UART4_RX
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_RX
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 80 - PC12
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D9
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_SD
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_CK
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_SD/SPI3_MOSI
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = UART5_TX
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART3_CK
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 81 - PD0
+2022-06-12 16:36:17,960 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN1_RX
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D2
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D2/FSMC_DA2
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 82 - PD1
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN1_TX
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D3
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_D3/FSMC_DA3
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 83 - PD2
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D11
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_CMD
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_ETR
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF8 // Value = UART5_RX
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 84 - PD3
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_CLK
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_CTS
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 85 - PD4
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_NOE
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_RTS
+2022-06-12 16:36:17,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 86 - PD5
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_NWE
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_TX
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 87 - PD6
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_NWAIT
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_RX
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 88 - PD7
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_NCE2
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_NCE2/FSMC_NE1
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART2_CK
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 89 - PB3
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_CK
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI1_SCK
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_CK/SPI3_SCK
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_JTDO-SWO
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF1 // Value = TIM2_CH2
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 90 - PB4
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = I2S3_ext_SD
+2022-06-12 16:36:17,991 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI1_MISO
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = SPI3_MISO
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF0 // Value = SYS_JTRST
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH1
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 91 - PB5
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN2_RX
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D10
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_PPS_OUT
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C1_SMBA
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_SD
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = SPI1_MOSI
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF6 // Value = I2S3_SD/SPI3_MOSI
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM3_CH2
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF10 // Value = USB_OTG_HS_ULPI_D7
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 92 - PB6
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN2_TX
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D5
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C1_SCL
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_CH1
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART1_TX
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 93 - PB7
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_VSYNC
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_NL
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C1_SDA
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_CH2
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF7 // Value = USART1_RX
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 94 - BOOT0
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 95 - PB8
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN1_RX
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D6
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF11 // Value = ETH_TXD3
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C1_SCL
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_D4
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM10_CH1
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_CH3
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 96 - PB9
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF9 // Value = CAN1_TX
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D7
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF4 // Value = I2C1_SDA
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_WS
+2022-06-12 16:36:18,022 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = SDIO_D5
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF5 // Value = I2S2_WS/SPI2_NSS
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF3 // Value = TIM11_CH1
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_CH4
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 97 - PE0
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D2
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_NBL0
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF2 // Value = TIM4_ETR
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 98 - PE1
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF13 // Value = DCMI_D3
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Key = AF12 // Value = FSMC_NBL1
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 99 - VSS
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Traitement de la pin : 100 - VDD
+2022-06-12 16:36:18,038 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] -------------------------------------------
+2022-06-12 19:28:21,239 [INFO] Activator:170 - 
+
+
+2022-06-12 19:28:21,244 [INFO] Activator:171 - !SESSION log4j initialized
