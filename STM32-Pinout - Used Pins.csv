@@ -1,0 +1,27 @@
+Position;Name;Type;Signal;Function
+1;VBAT;Power;;Power
+2;VSS;Power;;Power
+3;VDD;Power;;Power
+4;PH0-OSC_IN;I/O;RCC_OSC_IN;HSE
+5;PH1-OSC_OUT;I/O;RCC_OSC_OUT;HSE
+6;NRST;Reset;;Power
+8;VDD;Power;;Power
+9;VSSA;Power;;Power
+10;VREF+;Power;;Power
+11;VDDA;Power;;Power
+12;PA2;I/O;USART2_TX;Transmit to ESP32
+13;PA3;I/O;USART2_RX;Receive from ESP32
+14;VSS;Power;;Power
+15;VDD;Power;;Power
+17;VCAP_1;Power;;Power
+18;VDD;Power;;Power
+19;PD12;I/O;TIM4_CH1;PWM Yellow LED
+20;PD13;I/O;TIM4_CH2;PWM Orange LED
+21;PD14;I/O;TIM4_CH3;PWM Red LED
+22;PD15;I/O;TIM4_CH4;PWM Blue LED
+23;VCAP_2;Power;;Power
+24;VSS;Power;;Power
+25;VDD;Power;;Power
+26;BOOT0;Boot;;Boot From flash
+27;VSS;Power;;Power
+28;VDD;Power;;Power
